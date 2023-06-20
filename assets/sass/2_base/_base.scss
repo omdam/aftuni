@@ -1,0 +1,101 @@
+body {
+  font-size: 16px;
+  font-family: "GE Dinar One";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  color: $p_color_1;
+  background-color: #fdfdfd;
+}
+
+.overflow-body {
+  overflow: hidden;
+}
+
+p {
+  font-size: 18px;
+  color: $p_color_1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $h_color_1;
+}
+
+.list-unstyled {
+  margin-bottom: 0;
+}
+
+.row-om {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+
+  @include sm {
+    margin: 0 -7.5px;
+  }
+
+  @include xs {
+    margin: 0;
+  }
+
+  .col-om {
+    padding: 0 10px;
+    width: calc(100% / 4);
+
+    @include sm {
+      width: calc(100% / 2);
+    }
+
+    @include xs {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.section-wraper-om {
+  padding: 20px;
+  background-color: #fff;
+}
+
+svg {
+  max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.fix-om {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.section-default-padding {
+  padding: 55px 0 25px;
+}
+
+.change_row_gaps {
+  margin: 0 -7.5px;
+  > div {
+    padding: 0 7.5px;
+  }
+}

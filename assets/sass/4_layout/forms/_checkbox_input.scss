@@ -1,0 +1,49 @@
+// .checkbox-om {
+//     cursor          : pointer;
+//     margin          : 0;
+//     padding         : 0;
+//     width           : 16px;
+//     height          : 16px;
+//     background-color: #fff;
+//     border          : 1px solid #e8e8e8;
+//     opacity         : 0.4;
+
+//     &:checked {
+//         opacity: 1;
+//     }
+// }
+
+// .checkbox-group-om {
+//     display    : flex;
+//     align-items: center;
+
+//     .checkbox-om {
+//         opacity   : 0 !important;
+//         visibility: hidden !important;
+//         position  : absolute;
+//         top       : 0;
+//         left      : 0;
+//         z-index   : -1;
+
+//         &:checked {
+//             +.checkbox-label-om {
+//                 background-color: $color_2;
+//                 border-color: $color_2;
+//                 background-image   : url(../images/checkbox.svg);
+//             }
+//         }
+//     }
+
+//     .checkbox-label-om {
+//         cursor             : pointer;
+//         margin             : 0;
+//         padding            : 0;
+//         width              : 16px;
+//         height             : 16px;
+//         background-color   : #fff;
+//         border             : 1px solid #e8e8e8;
+//         background-position: center center;
+//         background-size    : 10px;
+//         background-repeat  : no-repeat;
+//     }
+// }

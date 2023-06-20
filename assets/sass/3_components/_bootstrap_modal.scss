@@ -1,0 +1,16 @@
+.modal {
+  .close {
+    position: absolute;
+    top: 5px;
+    inset-inline-start: 10px;
+  }
+
+  .modal-content {
+    padding: 50px 20px 20px;
+    border: none;
+  }
+}
+
+.modal-dialog {
+  max-width: 720px;
+}

@@ -1,0 +1,10 @@
+<svg id="arrow-left_broken" data-name="arrow-left/broken" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="vuesax_broken_arrow-left" data-name="vuesax/broken/arrow-left">
+    <g id="arrow-left">
+      <path id="Vector" d="M5.46,0,0,5.46l5.46,5.46" transform="translate(3.148 5.334)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M8.383,0H0" transform="translate(3.148 10.794)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-3" data-name="Vector" d="M3.13,0H0" transform="translate(15.156 10.794)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H21.587V21.587H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+.interpreter_block__ {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 89%;
+    background: #fff;
+    box-shadow: 0px 3px 14px 14px rgba(0, 0, 0, 0.04);
+  }
+
+  .person_image__ {
+    padding-bottom: 90.8%;
+    background-color: #ebebeb;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .person_info__ {
+    padding: 20px 30px 45px;
+    position: relative;
+
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      bottom: 22px;
+      width: 120%;
+      left: 50%;
+      height: 130%;
+      background: #fff;
+      transform: translateX(-50%) rotateZ(3deg);
+    }
+  }
+
+  .head__ {
+    font-size: 20px;
+  }
+
+  .parg__ {
+    font-size: 18px;
+    color: $p_color_2;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,46 @@
+// abstracts or helpers
+@import "1_abstracts/variables";
+@import "1_abstracts/functions";
+@import "1_abstracts/mixins";
+
+// base
+// @import 'base/normalize';
+@import "2_base/fonts";
+@import "2_base/base";
+@import "2_base/links";
+@import "2_base/buttons";
+@import "2_base/overlay";
+@import "2_base/selection_color";
+@import "2_base/scroll_bar";
+@import "2_base/lazy_load";
+@import "2_base/image_block";
+@import "2_base/close_button";
+@import "2_base/wraper_block";
+@import "2_base/tabs_block";
+
+//3_components
+@import "3_components/bootstrap_modal";
+@import "3_components/main_site_link";
+@import "3_components/main_heading";
+@import "3_components/pagination";
+@import "3_components/site_identity_shape";
+@import "3_components/rating_block";
+@import "3_components/feature_block";
+@import "3_components/interpreter_block";
+@import "3_components/article_block";
+@import "3_components/order_block";
+@import "3_components/client_review_block";
+
+// 4_layout
+@import "4_layout/header";
+@import "4_layout/footer";
+@import "4_layout/forms";
+@import "4_layout/sliders";
+
+// 5_pages
+@import "5_pages/default_page";
+@import "5_pages/home";
+@import "5_pages/registerration_pages";
+@import "5_pages/single_interpreter";
+@import "5_pages/orders_page";
+@import "5_pages/notifications";

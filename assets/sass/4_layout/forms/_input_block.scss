@@ -1,0 +1,24 @@
+.input-om {
+  height: 52px;
+  border-radius: 0;
+  border: solid 1px #dcdcdc;
+  background-color: #fff;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: $h_color_1;
+  padding: 20px 29px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+  &:focus,
+  &:hover {
+    border-color: $color_1;
+  }
+
+  &::placeholder {
+    color: #aaaaaa;
+  }
+}

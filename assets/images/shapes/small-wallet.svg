@@ -1,0 +1,8 @@
+<svg id="wallet_linear" data-name="wallet/linear" xmlns="http://www.w3.org/2000/svg" width="23.302" height="23.302" viewBox="0 0 23.302 23.302">
+  <g id="vuesax_linear_wallet" data-name="vuesax/linear/wallet">
+    <path id="Vector" d="M19.418,4.855V9.709a4.586,4.586,0,0,1-4.855,4.855H4.855A4.586,4.586,0,0,1,0,9.709V4.855A4.519,4.519,0,0,1,4.068.058,5.167,5.167,0,0,1,4.855,0h9.709a4.44,4.44,0,0,1,.728.049A4.528,4.528,0,0,1,19.418,4.855Z" transform="translate(1.942 6.796)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M11.224,4.9a4.44,4.44,0,0,0-.728-.049H.786A5.167,5.167,0,0,0,0,4.913a2.955,2.955,0,0,1,.563-.757L3.719.99a3.422,3.422,0,0,1,4.816,0l1.7,1.719A3.276,3.276,0,0,1,11.224,4.9Z" transform="translate(6.011 1.942)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-3" data-name="Vector" d="M4.855,0H1.942a1.942,1.942,0,0,0,0,3.884H4.855" transform="translate(16.506 12.136)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H23.3V23.3H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

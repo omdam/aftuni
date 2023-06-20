@@ -1,0 +1,145 @@
+.footer_sec__ {
+  position: relative;
+  padding: 43px 0 25px;
+  margin-top: 100px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    width: 66%;
+    background-color: $color_1;
+    height: 100%;
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+
+    @include sm {
+      width: 100%;
+      clip-path: unset;
+    }
+  }
+
+  .footer_head__ {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    @include sm {
+      text-align: center;
+    }
+  }
+
+  .footer_list__ {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include sm {
+      display: block;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    li {
+      width: 40%;
+      margin-bottom: 20px;
+
+      @include sm {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      font-size: 15px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+
+      @include sm {
+        justify-content: center;
+      }
+
+      &:hover {
+        color: #fff;
+        opacity: 41%;
+        padding-inline-start: 10px;
+      }
+    }
+  }
+
+  .footer-logo__ {
+    max-width: 200px;
+    background-color: transparent !important;
+    margin-bottom: 36px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include sm {
+      margin: 0 auto 30px;
+    }
+  }
+
+  .footer_parg__ {
+    width: 80%;
+    color: $color_1;
+
+    @include sm {
+      text-align: center;
+      color: #fff;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .copyrights__ {
+    color: #fff;
+    padding: 22px 0;
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+
+    @include sm {
+      padding: 20px 0;
+    }
+  }
+}
+
+.footer_socials__ {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+
+  @include sm {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .li__ {
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+      margin-inline-end: 15px;
+    }
+  }
+
+  .link__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 38px;
+    border: 1px solid rgba(#fff, 0.28);
+    transition: 0.5s;
+
+    &:hover {
+      background-color: rgba(#fff, 0.28);
+    }
+  }
+}

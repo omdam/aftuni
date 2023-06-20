@@ -1,0 +1,57 @@
+.site_identity_shape_parent__ {
+  position: relative;
+  overflow: hidden;
+
+  > div {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.site_identity_shape__ {
+  position: absolute;
+  top: 20px;
+  inset-inline-start: (-352px /2);
+  width: 352px;
+  height: 352px;
+  pointer-events: none;
+  animation: spin 20s linear infinite;
+  z-index: -1;
+
+  &.reverse_vertical__ {
+    inset-inline-start: unset;
+    inset-inline-end: (-352px /2);
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &.center_horizertal__ {
+    top: 50%;
+    transform: translateY(-50%);
+    animation: centered_spin 20s linear infinite;
+  }
+
+  &.opacity_effect__ {
+    opacity: 0.3;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes centered_spin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}

@@ -1,0 +1,52 @@
+// dinar
+@font-face {
+    font-family: "GE Dinar One";
+    src: url("../fonts/dinar/GEDinarOne-Light.eot");
+    src: url("../fonts/dinar/GEDinarOne-Light.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/dinar/GEDinarOne-Light.woff2") format("woff2"),
+        url("../fonts/dinar/GEDinarOne-Light.woff") format("woff"),
+        url("../fonts/dinar/GEDinarOne-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GE Dinar One";
+    src: url("../fonts/dinar/GEDinarOne-Medium.eot");
+    src: url("../fonts/dinar/GEDinarOne-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/dinar/GEDinarOne-Medium.woff2") format("woff2"),
+        url("../fonts/dinar/GEDinarOne-Medium.woff") format("woff"),
+        url("../fonts/dinar/GEDinarOne-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GE Dinar One";
+    src: url("../fonts/dinar/GEDinarOne-LightItalic.eot");
+    src: url("../fonts/dinar/GEDinarOne-LightItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/dinar/GEDinarOne-LightItalic.woff2") format("woff2"),
+        url("../fonts/dinar/GEDinarOne-LightItalic.woff") format("woff"),
+        url("../fonts/dinar/GEDinarOne-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GE Dinar One";
+    src: url("../fonts/dinar/GEDinarOne-MediumItalic.eot");
+    src: url("../fonts/dinar/GEDinarOne-MediumItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/dinar/GEDinarOne-MediumItalic.woff2") format("woff2"),
+        url("../fonts/dinar/GEDinarOne-MediumItalic.woff") format("woff"),
+        url("../fonts/dinar/GEDinarOne-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
