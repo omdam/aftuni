@@ -4,7 +4,6 @@
 
   @include sm {
     display: block;
-    margin-top: 50px;
   }
 
   .singup_link {
@@ -25,7 +24,11 @@
 
     @include sm {
       border-radius: 0;
-      margin-bottom: 20px;
+      margin-bottom: 0;
+      height: 40px;
+      min-width: 70px;
+      font-size: 12px;
+      padding: 3px 10px;
     }
 
     &:not(:last-child) {

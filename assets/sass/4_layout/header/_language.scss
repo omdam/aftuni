@@ -1,11 +1,16 @@
 .lang-toolbar_ {
   display: flex;
-  margin-inline-end: 30px;
+  margin-inline-end: -72px;
+
+  @include md {
+    margin-inline-end: 10px;
+  }
 
   @include sm {
     position: absolute;
     top: 20px;
     inset-inline-start: 20px;
+    margin-inline-end: 0;
   }
 
   .lang_link__ {

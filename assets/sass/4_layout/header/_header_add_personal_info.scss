@@ -1,16 +1,20 @@
 .header_personal_info__ {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 
   @include sm {
-    margin-top: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 0;
   }
 
   .block__ {
     &:not(:last-child) {
       margin-inline-end: 20px;
+
+      @include sm {
+        margin-inline-end: 4px;
+      }
     }
   }
 
@@ -33,6 +37,13 @@
       font-weight: bold;
       justify-content: space-between;
 
+      @include sm {
+        min-width: 97px;
+        font-size: 12px;
+        padding: 4px 10px;
+        height: 40px;
+      }
+
       &::after {
         content: url(../images/down_arrow.svg);
         margin: 0;
@@ -43,6 +54,10 @@
         margin-top: 0;
         margin-inline-end: 0;
         height: 22px;
+
+        @include sm {
+          transform: scale(0.5);
+        }
       }
 
       &:hover {
@@ -71,6 +86,10 @@
       transition: 0.5s;
       padding: 12px 17px;
       border-radius: 0;
+
+      @include sm {
+        min-width: 152px;
+      }
 
       li {
         margin-bottom: 10px;
@@ -144,6 +163,12 @@
   justify-content: center;
   background-color: rgba($color_2, 0.1);
   position: relative;
+
+  @include sm {
+    width: 40px;
+    height: 40px;
+  }
+
   .badge {
     background-color: #eb0018;
     display: flex;
@@ -157,5 +182,24 @@
     top: -10px;
     right: -10px;
     color: #fff;
+  }
+}
+
+.menu-button-om {
+  display: none;
+
+  @include sm {
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color_2, 0.1);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    svg {
+      width: 15px;
+    }
   }
 }

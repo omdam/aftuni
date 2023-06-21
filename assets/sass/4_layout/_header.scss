@@ -27,27 +27,12 @@
       content: "";
       position: absolute;
       bottom: 22px;
-      width: 100%;
+      width: 102%;
       left: 0;
       height: 154%;
       filter: drop-shadow(-1px 4px 3px rgba(50, 50, 0, 0.1));
       background: #fff;
       transform: rotateZ(0.9deg);
-    }
-  }
-
-  .menu-button-om {
-    display: none;
-
-    @include sm {
-      display: block;
-      color: $color_2;
-      position: relative;
-      z-index: 11;
-
-      svg {
-        width: 20px;
-      }
     }
   }
 }

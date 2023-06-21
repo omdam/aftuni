@@ -15,9 +15,17 @@
     margin-bottom: 0;
     margin-inline-end: 78px;
 
+    @include md {
+      margin-inline-end: 40px;
+    }
+
     > li {
       &:not(:last-child) {
         margin-inline-end: 33px;
+
+        @include md {
+          margin-inline-end: 15px;
+        }
       }
 
       > a {
@@ -96,7 +104,7 @@
       justify-content: center;
       margin: 0 auto;
       margin-bottom: 40px;
-      max-width: 200px;
+      max-width: 150px;
 
       img {
         max-width: 100%;
