@@ -212,30 +212,24 @@ function toggleSideMenuInSmallScreens($) {
 }
 
 function stickyHeader($) {
-  // asign height to the header
-  let headerHeight = $("header").outerHeight();
-
   let lastScroll = 0;
   $(document).on("scroll", function () {
     let currentScroll = $(this).scrollTop();
     const fixedHeaderElement = $(".fixed-header-warper");
 
-    // scroll down
-    if (currentScroll < lastScroll && currentScroll > headerHeight + 100) {
-      fixedHeaderElement.addClass("active-menu-om");
-      fixedHeaderElement.removeClass("not-active-menu-om");
-    } else if (
-      currentScroll > lastScroll &&
-      currentScroll > headerHeight + 100
-    ) {
-      // scroll up
-      if (fixedHeaderElement.hasClass("active-menu-om")) {
-        fixedHeaderElement.removeClass("active-menu-om");
-        fixedHeaderElement.addClass("not-active-menu-om");
-      }
+    const isScrollingDown = function () {
+      return currentScroll < lastScroll && currentScroll > 500;
+    }
+    const isScrollingUp = function () {
+      return currentScroll > lastScroll && currentScroll > 500;
+    }
+
+    if (isScrollingDown()) {
+      fixedHeaderElement.addClass("active-menu-om").removeClass("not-active-menu-om");
+    } else if (isScrollingUp()) {
+      fixedHeaderElement.removeClass("active-menu-om").addClass("not-active-menu-om");
     } else {
-      fixedHeaderElement.removeClass("active-menu-om");
-      fixedHeaderElement.removeClass("not-active-menu-om");
+      fixedHeaderElement.removeClass("active-menu-om not-active-menu-om");
     }
     lastScroll = currentScroll;
   });

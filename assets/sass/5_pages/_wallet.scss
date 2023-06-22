@@ -1,0 +1,58 @@
+.wallet_points_wrapper__ {
+  text-align: center;
+  margin-bottom: 16px;
+
+  .num__ {
+    font-size: 48px;
+    font-weight: bold;
+    color: $color_1;
+    margin-bottom: 0;
+  }
+
+  .head__ {
+    font-size: 28px;
+    font-weight: bold;
+    color: $color_1;
+    margin-bottom: 0;
+  }
+}
+
+.wallet_amount_of_mony__ {
+  min-width: 170px;
+  background-color: rgba($color_2, 0.2);
+  color: $color_2;
+  height: 59px;
+  display: flex;
+  margin: 0 auto;
+  max-width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: $color_2;
+
+  span {
+    font-size: 27px;
+    margin-inline-end: 2px;
+    font-weight: bold;
+  }
+}
+
+.wallet_recharge__ {
+  background-color: $color_2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 30px;
+    margin-inline-end: 3px;
+    display: block;
+    margin-top: -5px;
+  }
+
+  &:hover {
+    background-color: rgba($color_2, 0.9);
+  }
+}

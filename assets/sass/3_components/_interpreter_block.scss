@@ -19,6 +19,7 @@
   .person_image__ {
     padding-bottom: 90.8%;
     background-color: #ebebeb;
+    overflow: hidden;
 
     img {
       object-fit: contain;
@@ -44,6 +45,7 @@
 
   .head__ {
     font-size: 20px;
+    transition: 0.5s;
   }
 
   .parg__ {
@@ -53,5 +55,15 @@
 
   &:hover {
     text-decoration: none;
+
+    .person_image__ {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .head__ {
+      color: $color_1;
+    }
   }
 }

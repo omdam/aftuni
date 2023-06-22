@@ -1,16 +1,13 @@
 .lang-toolbar_ {
   display: flex;
-  margin-inline-end: -72px;
+  margin-inline-end: 20px;
 
   @include md {
     margin-inline-end: 10px;
   }
 
   @include sm {
-    position: absolute;
-    top: 20px;
-    inset-inline-start: 20px;
-    margin-inline-end: 0;
+    display: none;
   }
 
   .lang_link__ {
@@ -31,6 +28,19 @@
       @include sm {
         filter: brightness(0) invert(1);
       }
+    }
+  }
+
+  &.nav_lang__ {
+    display: none;
+
+    @include sm {
+      display: block;
+
+      position: absolute;
+      top: 20px;
+      inset-inline-start: 20px;
+      margin-inline-end: 0;
     }
   }
 }

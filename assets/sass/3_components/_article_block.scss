@@ -6,6 +6,7 @@
 
   .article_image__ {
     padding-bottom: 65%;
+    overflow: hidden;
   }
 
   .article_info_wrapper__ {
@@ -15,6 +16,7 @@
   .head__ {
     font-size: 20px;
     margin-bottom: 12px;
+    transition: 0.5s;
   }
 
   .article_list_details__ {
@@ -43,5 +45,15 @@
 
   &:hover {
     text-decoration: none;
+
+    .article_image__ {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .head__ {
+      color: $color_1;
+    }
   }
 }

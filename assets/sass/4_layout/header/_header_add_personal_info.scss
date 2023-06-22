@@ -9,11 +9,11 @@
   }
 
   .block__ {
-    &:not(:last-child) {
-      margin-inline-end: 20px;
+    &:not(:first-child) {
+      margin-inline-start: 20px;
 
       @include sm {
-        margin-inline-end: 4px;
+        margin-inline-start: 4px;
       }
     }
   }
