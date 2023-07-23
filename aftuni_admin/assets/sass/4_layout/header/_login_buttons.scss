@@ -1,0 +1,56 @@
+.sing-up-blocks {
+  display: flex;
+  align-items: center;
+
+  @include sm {
+    display: block;
+  }
+
+  .singup_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid $color_1;
+    height: 49px;
+    min-width: 152px;
+    padding: 3px 20px;
+    border-radius: 0;
+    font-size: 15px;
+    color: $color_1;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+
+    @include sm {
+      border-radius: 0;
+      margin-bottom: 0;
+      height: 40px;
+      min-width: 70px;
+      font-size: 12px;
+      padding: 3px 10px;
+    }
+
+    &:not(:last-child) {
+      margin-inline-end: 16px;
+
+      @include sm {
+        margin-inline-end: 0;
+      }
+    }
+
+    &:hover {
+      background-color: $color_1;
+      color: #fff;
+    }
+
+    &.you_have_account {
+      background-color: $color_1;
+      color: #fff;
+
+      &:hover {
+        background-color: rgba($color_1, 0.8);
+      }
+    }
+  }
+}

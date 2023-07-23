@@ -1,0 +1,166 @@
+.single_interpreter__ {
+  display: flex;
+  padding-bottom: 30px;
+
+  @include xs {
+    display: block;
+  }
+
+  .image_wrapper__ {
+    .person_image__ {
+      width: 260px;
+      margin-inline-end: 16px;
+      padding-bottom: 89.6%;
+
+      @include xs {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        background-color: rgba($color_1, 0.1);
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+      }
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .person_main_info_wrapper__ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include xs {
+      flex-wrap: wrap;
+    }
+
+    .head__ {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .person_points_wrapper__ {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+
+      .points {
+        font-size: 27px;
+        color: $color_1;
+        margin-inline-end: 5px;
+      }
+
+      .price {
+        font-size: 16px;
+        color: $color_2;
+      }
+    }
+  }
+
+  .person_desc_title {
+    font-size: 18px;
+    color: $p_color_1;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  .parg__ {
+    font-size: 14px;
+    color: $p_color_1;
+  }
+}
+
+.service_cost__ {
+  display: flex;
+  align-items: center;
+  background-color: rgba($color_2, 0.1);
+  padding: 11px 16px;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+
+  .head__ {
+    font-size: 13px;
+    margin-inline-end: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  .points__ {
+    font-size: 16px;
+    color: $color_1;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 2px;
+      background-color: rgba($color_2, 0.2);
+      margin: 0 10px;
+    }
+  }
+
+  .price__ {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+.order_modal_content__ {
+  width: 536px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.modal_submit_wrapper__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .mony_in_wallet {
+    .head__ {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: $p_color_2;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: url(../images/shapes/small-wallet.svg);
+        margin-inline-end: 5px;
+      }
+    }
+
+    .cash_wrapper__ {
+      .points_ {
+        font-size: 17px;
+        color: $color_1;
+        margin-inline-end: 10px;
+        font-weight: bold;
+      }
+
+      .cash__ {
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.success_order_message__ {
+  padding-bottom: 30px;
+}

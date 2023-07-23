@@ -1,0 +1,124 @@
+.dreams_tabs__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .dream_link {
+    background-color: #efefef;
+    color: $p_color_2;
+
+    &.active,
+    &:hover {
+      background-color: $color_1;
+      color: #fff;
+    }
+  }
+}
+
+.orders_content__ {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.order_details_header__ {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .secondary_site_head__ {
+    margin-bottom: 0;
+  }
+}
+
+.chat_section__ {
+  margin-top: 49px;
+}
+
+.chat_header__ {
+  color: $color_1;
+  font-size: 14px;
+  margin: 0;
+  display: flex;
+  padding: 25px 30px 13px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: url(../images/shapes/message.svg);
+    margin-inline-end: 8px;
+  }
+
+  &::after {
+    content: "";
+    background-color: rgba($color_1, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}
+.chat_content__ {
+  padding: 70px 30px 40px;
+  background-color: #fff;
+  box-shadow: 0 0 60px rgba(#8a8888, 0.16);
+}
+
+.messages__ {
+  .message_block__ {
+    background-color: #f6f6f6;
+    color: $color_2;
+    width: 47%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 11px;
+
+    @include sm {
+      width: 90%;
+    }
+
+    &.the_outher_user_message {
+      background-color: $color_2;
+      color: #fff;
+      margin-inline-start: auto;
+    }
+  }
+  audio {
+    margin-bottom: 10px;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+}
+
+.chat_submit_wrapper__ {
+  margin-top: 20px;
+  position: relative;
+
+  .submit_chat_new_message__ {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color_1, 0.2);
+    border: 1px solid $color_1;
+    color: $color_1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-end: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: #fff;
+      background-color: $color_1;
+    }
+  }
+}

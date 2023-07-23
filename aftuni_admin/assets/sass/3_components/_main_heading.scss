@@ -1,0 +1,44 @@
+.site_head__ {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 34px;
+  color: $color_1;
+
+  @include sm {
+    font-size: 30px;
+  }
+
+  &.align_start__ {
+    text-align: start;
+  }
+}
+
+.secondary_site_head__ {
+  text-align: center;
+  margin-bottom: 28px;
+
+  .icon {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .head__ {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  .parg__ {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: $p_color_2;
+  }
+
+  &.align_start__ {
+    text-align: start;
+  }
+}

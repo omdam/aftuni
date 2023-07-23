@@ -1,0 +1,11 @@
+<svg id="document-text_linear" data-name="document-text/linear" xmlns="http://www.w3.org/2000/svg" width="19.514" height="19.514" viewBox="0 0 19.514 19.514">
+  <g id="vuesax_linear_document-text" data-name="vuesax/linear/document-text">
+    <g id="document-text">
+      <path id="Vector" d="M14.635,4.065V12.2c0,2.439-1.22,4.065-4.065,4.065h-6.5C1.22,16.261,0,14.635,0,12.2V4.065C0,1.626,1.22,0,4.065,0h6.5C13.416,0,14.635,1.626,14.635,4.065Z" transform="translate(2.439 1.626)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0V1.626A1.631,1.631,0,0,0,1.626,3.252H3.252" transform="translate(11.79 3.659)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H3.252" transform="translate(6.505 10.57)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H6.5" transform="translate(6.505 13.822)" fill="none" stroke="#aa8e56" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-5" data-name="Vector" d="M0,0H19.514V19.514H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+
+// selection color
+::-moz-selection {
+    color     : #fff;
+    background: $color_1;
+}
+
+::selection {
+    color     : #fff;
+    background: $color_1;
+}

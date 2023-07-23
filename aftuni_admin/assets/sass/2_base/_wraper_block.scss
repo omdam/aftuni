@@ -1,0 +1,9 @@
+.ss-wraper-om {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm {
+        display: block;
+    }
+}

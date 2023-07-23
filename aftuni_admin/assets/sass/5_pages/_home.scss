@@ -1,0 +1,136 @@
+.main_intro_section__ {
+  padding-top: (80px + 120px);
+  padding-bottom: 0;
+  background-color: $color_2;
+
+  @include sm {
+    padding-top: (40px + 120px);
+  }
+
+  .main_intro_title__ {
+    color: #fff;
+    font-size: 44px;
+    margin-bottom: 44px;
+
+    @include sm {
+      font-size: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 60px;
+      display: block;
+
+      @include sm {
+        font-size: 30px;
+        display: inline;
+      }
+    }
+  }
+
+  .main_intro_pargraph__ {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+
+    @include sm {
+      text-align: center;
+    }
+  }
+
+  .section_show-more__ {
+    background-color: #fff;
+    color: $color_2;
+    position: relative;
+    z-index: 1;
+
+    @include sm {
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background-color: rgba(#fff, 0.9);
+    }
+  }
+
+  .main_intro_image_block__ {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../images/intro/intro_cloud.png");
+      position: absolute;
+      width: 755px;
+      height: 490px;
+      left: 50%;
+      top: -150px;
+      transform: translateX(-50%);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .figure-om {
+      padding-bottom: 86%;
+      background-color: transparent !important;
+    }
+  }
+
+  .site_identity_shape__ {
+    top: 130px;
+    inset-inline-start: (-300px /2);
+  }
+}
+
+.about_us_section__ {
+  padding: 100px 0 100px;
+  text-align: center;
+  background-color: #fff;
+
+  @include sm {
+    padding: 50px 0;
+  }
+
+  .logo__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 270px;
+    margin: 0 auto 30px;
+  }
+
+  .about_pargs__ {
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.features_sections__ {
+  background-color: rgba($color_1, 0.1);
+  padding: 75px 0 45px;
+
+  @include sm {
+    padding: 50px 0 20px;
+  }
+}
+
+.interpreters {
+  padding: 100px 0;
+
+  @include sm {
+    padding: 50px 0;
+  }
+}
+
+.articles {
+  background-color: rgba($color_1, 0.1);
+  padding: 75px 0;
+  margin-bottom: 100px;
+
+  @include sm {
+    padding: 50px 0;
+  }
+}

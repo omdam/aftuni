@@ -1,0 +1,19 @@
+.header-logo-om {
+  width: 152px;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  @include sm {
+    width: 100px;
+  }
+
+  .figure-om {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}

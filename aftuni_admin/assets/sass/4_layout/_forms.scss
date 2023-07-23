@@ -1,0 +1,131 @@
+@import "forms/input_block";
+@import "forms/textarea_block";
+@import "forms/submit_block";
+@import "forms/select_block";
+@import "forms/checkbox_input";
+@import "forms/radio_input";
+@import "forms/datepicker";
+
+.default_form_width__ {
+  max-width: 372px;
+  margin: 0 auto;
+}
+
+.input-group-om {
+  margin-bottom: 10px;
+
+  .optional__ {
+    position: absolute;
+    top: 15px;
+    left: 32px;
+    font-size: 12px;
+    color: #ff004c;
+    pointer-events: none;
+  }
+
+  .locate_on_map__ {
+    cursor: pointer;
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    margin: 0;
+    padding: 0 28px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 31px;
+    font-size: 12px;
+    color: $color_2;
+    outline: none !important;
+
+    &::before {
+      content: url(../images/map.svg);
+      margin-inline-end: 10px;
+    }
+
+    @include dir {
+      left: unset;
+      right: 35px;
+    }
+  }
+}
+
+.lable-om {
+  color: $h_color_1;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.password-group-om {
+  position: relative;
+
+  .input-om {
+    padding-inline-end: 40px;
+  }
+
+  .show-password-button-om {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: 50px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #969696;
+
+    @include dir {
+      left: unset;
+      right: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.show-om {
+      color: $color_1;
+    }
+  }
+}
+
+.flating_label__ {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 50%;
+    inset-inline-start: 30px;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+    transition: 0.2s;
+  }
+
+  .input-om {
+    height: 59px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      ~ label {
+        top: 3px;
+        transform: translateY(0);
+        font-size: 10px;
+      }
+    }
+  }
+}

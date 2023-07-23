@@ -1,0 +1,53 @@
+.lang-toolbar_ {
+  display: flex;
+
+  @include sm {
+    display: none;
+  }
+
+  .lang_link__ {
+    display: flex;
+    align-items: center;
+    color: $h_color_1;
+    background-color: transparent !important;
+    padding: 0 !important;
+    min-width: auto !important;
+
+    @include sm {
+      color: #fff;
+      height: auto;
+    }
+
+    &::before {
+      content: url("../images/language.svg");
+      margin-inline-end: 10px;
+      height: 22px;
+      display: block;
+
+      @include sm {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &::after {
+      transform: scale(0.5);
+    }
+  }
+
+  &.nav_lang__ {
+    display: none;
+
+    @include sm {
+      display: block;
+
+      position: absolute;
+      top: 20px;
+      inset-inline-start: 20px;
+      margin-inline-end: 0;
+    }
+
+    &.dropdown__ > a::after {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

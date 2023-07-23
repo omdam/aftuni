@@ -1,0 +1,12 @@
+<svg id="vuesax_bulk_calendar-edit" data-name="vuesax/bulk/calendar-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="calendar-edit">
+    <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    <g id="Group">
+      <path id="Vector-2" data-name="Vector" d="M13.711,2.31V.75a.75.75,0,0,0-1.5,0v1.5h-6.5V.75a.75.75,0,0,0-1.5,0V2.31A4.248,4.248,0,0,0,0,6.56a.5.5,0,0,0,.5.53h16.92a.5.5,0,0,0,.5-.53A4.248,4.248,0,0,0,13.711,2.31Z" transform="translate(3.039 1.25)" fill="#aa8e56"/>
+      <path id="Vector-3" data-name="Vector" d="M17,0a1,1,0,0,1,1,1V7.16c0,3-1.5,5-5,5H5c-3.5,0-5-2-5-5V1A1,1,0,0,1,1,0Z" transform="translate(3 9.84)" fill="#aa8e56" opacity="0.4"/>
+    </g>
+    <g id="Group-2" data-name="Group">
+      <path id="Vector-4" data-name="Vector" d="M6.249,2.79l-.5.51h-.01L2.709,6.33a1.174,1.174,0,0,1-.59.29l-1.35.2a.638.638,0,0,1-.76-.76L.2,4.7a1.31,1.31,0,0,1,.29-.59l3.04-3.03.5-.51A1.63,1.63,0,0,1,5.129,0a1.608,1.608,0,0,1,1.12.57A1.365,1.365,0,0,1,6.249,2.79Z" transform="translate(8.591 12.2)" fill="#aa8e56"/>
+    </g>
+  </g>
+</svg>

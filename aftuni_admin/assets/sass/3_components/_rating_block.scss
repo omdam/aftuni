@@ -1,0 +1,22 @@
+.rating_wrapper__ {
+  display: flex;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.starts_block__ {
+  display: flex;
+
+  > .rating_star_ {
+    margin-inline-end: 7px;
+    filter: grayscale(1);
+    &.active {
+      filter: none;
+    }
+  }
+}
+
+.rating_avg__ {
+  font-size: 13px;
+  color: #f2b21a;
+}

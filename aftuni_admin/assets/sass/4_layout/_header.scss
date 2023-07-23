@@ -1,0 +1,92 @@
+@import "header/language";
+@import "header/login_buttons";
+@import "header/1_logo";
+@import "header/2_navbar";
+@import "header/dropdown";
+// @import "header/3_mega_menu";
+@import "header/header_add_personal_info";
+
+// layout
+.header-om {
+  .ss-wraper-om {
+    @include sm {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .header-sec-om {
+    padding: 30px 0 40px;
+    position: relative;
+
+    @include sm {
+      padding: 10px 0 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 22px;
+      width: 102%;
+      left: 0;
+      height: 154%;
+      filter: drop-shadow(-1px 4px 3px rgba(50, 50, 0, 0.1));
+      background: #fff;
+      transform: rotateZ(0.9deg);
+    }
+  }
+}
+
+.fixed-header-warper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  // overflow: hidden;
+
+  // search icon in > layout > forms
+  &.active-menu-om,
+  &.not-active-menu-om {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    transition: 0s;
+  }
+
+  &.active-menu-om {
+    animation: active-menu 0.5s;
+  }
+
+  &.not-active-menu-om {
+    animation: not-active-menu 0.5s;
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+}
+
+@keyframes active-menu {
+  0% {
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+
+  100% {
+    // transform: translateY(0);
+    top: 0;
+  }
+}
+
+@keyframes not-active-menu {
+  0% {
+    // transform: translateY(0);
+    top: 0;
+  }
+
+  100% {
+    // transform: translateY(-100%);
+    top: -200px;
+  }
+}

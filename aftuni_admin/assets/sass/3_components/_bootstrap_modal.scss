@@ -1,0 +1,19 @@
+.modal {
+  .close {
+    position: absolute;
+    top: 20px;
+    inset-inline-start: 20px;
+    color: #e30733;
+    opacity: 1;
+    font-size: 29px;
+  }
+
+  .modal-content {
+    padding: 50px 20px 20px;
+    border: none;
+  }
+}
+
+.modal-dialog {
+  max-width: 720px;
+}
