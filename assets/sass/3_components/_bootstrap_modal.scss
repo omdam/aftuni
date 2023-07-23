@@ -1,8 +1,11 @@
 .modal {
   .close {
     position: absolute;
-    top: 5px;
-    inset-inline-start: 10px;
+    top: 20px;
+    inset-inline-start: 20px;
+    color: #e30733;
+    opacity: 1;
+    font-size: 29px;
   }
 
   .modal-content {

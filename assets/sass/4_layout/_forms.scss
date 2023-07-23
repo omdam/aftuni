@@ -95,3 +95,37 @@
     }
   }
 }
+
+.flating_label__ {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 50%;
+    inset-inline-start: 30px;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+    transition: 0.2s;
+  }
+
+  .input-om {
+    height: 59px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      ~ label {
+        top: 3px;
+        transform: translateY(0);
+        font-size: 10px;
+      }
+    }
+  }
+}

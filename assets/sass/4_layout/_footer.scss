@@ -18,6 +18,10 @@
       width: 100%;
       clip-path: unset;
     }
+
+    @include dir {
+      transform: scaleX(-1);
+    }
   }
 
   .footer_head__ {
@@ -87,8 +91,9 @@
   }
 
   .footer_parg__ {
-    width: 80%;
+    width: 70%;
     color: $color_1;
+    font-size: 16px;
 
     @include sm {
       text-align: center;

@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
   <!-- start header  -->
   <header class="header-om">
     <div class="header-wraper-om fixed-header-warper">
@@ -57,28 +58,38 @@
                 </li>
 
               </ul>
-              <div class="lang-toolbar_ nav_lang__">
+              <div class="lang-toolbar_ dropdown__ nav_lang__">
                 <a class="lang_link__" href="#!">
                   العربية
                 </a>
+                <ul class="sub-menu__">
+                  <li>
+                    <a href="#!">
+                      English
+                    </a>
+                  </li>
+                </ul>
               </div>
 
             </nav>
 
             <ul class="header_personal_info__ list-unstyled">
               <li class="block__">
-                <div class="lang-toolbar_ ">
+                <div class="lang-toolbar_ dropdown__">
                   <a class="lang_link__" href="#!">
                     العربية
                   </a>
+                  <ul class="sub-menu__">
+                    <li>
+                      <a href="#!">
+                        English
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </li>
-              <li class="block__">
-                <div class="sing-up-blocks">
-                  <a class="singup_link you_have_account" href="register_signin.html">تسجيل الدخول</a>
-                </div>
-              </li>
-              <!-- <li class="block__ dropdown__">
+
+              <li class="block__ dropdown__">
                 <a class="info_link_block__" href="#!">
                   مرحبا , خالد
                 </a>
@@ -110,7 +121,7 @@
                   <img class="img-om" src="./assets//images/notification.svg" alt=".." />
                   <span class="badge">12</span>
                 </a>
-              </li> -->
+              </li>
               <!-- start active nenu button in small sizes  -->
               <li class="block__">
                 <button class="menu-button-om butt-om" id="menu-butt-activ-om">
@@ -135,7 +146,7 @@
   </header>
   <!-- end header  -->
 
-  <main class="registeration_page__ site_identity_shape_parent__">
+  <main class="default_page__ registeration_page__ site_identity_shape_parent__">
     <figure class="site_identity_shape__ center_horizertal__ figure-om opacity_effect__">
       <img class="img-om" src="./assets//images/shape_.png" alt=".." />
     </figure>
@@ -150,11 +161,20 @@
           <p class="parg__">قم بتعديل بياناتك بكل سهولة</p>
         </div>
         <form action="register_verification_code.html">
-          <div class="input-group-om">
-            <input class="input-om" type="text" name="" placeholder="الاسم" />
+          <div class="input-group-om ">
+            <div class="flating_label__">
+              <input class="input-om form-control" id="form_name__" type="text" name="" value="name example"
+                placeholder="الاسم" />
+              <label for="form_name__">الاسم</label>
+            </div>
           </div>
+
           <div class="input-group-om">
-            <input class="input-om" type="text" name="" placeholder="رقم الجوال" />
+            <div class="flating_label__">
+              <input class="input-om" id="form_phone__" type="text" name="" placeholder="رقم الجوال"
+                value="01000000000000000" />
+              <label for="form_phone__">رقم الجوال</label>
+            </div>
           </div>
           <input class="submit-butt-om input-om" type="submit" value="حفظ التعديلات" />
         </form>

@@ -1,10 +1,5 @@
 .lang-toolbar_ {
   display: flex;
-  margin-inline-end: 20px;
-
-  @include md {
-    margin-inline-end: 10px;
-  }
 
   @include sm {
     display: none;
@@ -14,9 +9,13 @@
     display: flex;
     align-items: center;
     color: $h_color_1;
+    background-color: transparent !important;
+    padding: 0 !important;
+    min-width: auto !important;
 
     @include sm {
       color: #fff;
+      height: auto;
     }
 
     &::before {
@@ -41,6 +40,10 @@
       top: 20px;
       inset-inline-start: 20px;
       margin-inline-end: 0;
+    }
+
+    &.dropdown__ > a::after {
+      filter: brightness(0) invert(1);
     }
   }
 }

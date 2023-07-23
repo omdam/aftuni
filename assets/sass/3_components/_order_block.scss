@@ -52,9 +52,15 @@
       margin-bottom: 5px;
     }
 
+    .dream_details_head__ {
+      color: $color_1;
+      font-size: 12px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     .parg__ {
       font-size: 11px;
-      margin-top: 15px;
+      margin-top: 0;
     }
   }
 
@@ -87,6 +93,52 @@
 
   &:hover {
     text-decoration: none;
+  }
+
+  &.order_with_arrow {
+    padding-inline-end: 80px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      inset-inline-end: 0;
+      width: 56px;
+      height: 100%;
+      background-color: rgba($color_2, 0.1);
+      transition: 0.3s;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      inset-inline-end: 0;
+      width: 56px;
+      height: 56px;
+      background-image: url(../images/down_arrow.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      transform: translateY(-50%) rotate(90deg);
+      z-index: 1;
+      transition: 0.3s;
+
+      @include dir {
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+
+    &:hover {
+      &::after {
+        background-color: $color_2;
+      }
+      &::before {
+        filter: brightness(0) invert(1);
+      }
+    }
   }
 }
 
