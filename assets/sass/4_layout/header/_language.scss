@@ -28,6 +28,10 @@
         filter: brightness(0) invert(1);
       }
     }
+
+    &::after {
+      transform: scale(0.5);
+    }
   }
 
   &.nav_lang__ {
